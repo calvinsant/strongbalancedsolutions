@@ -15,17 +15,24 @@ gulp.task('css',function(){
 	gulp.src(['./src/css/*.css'])
 	.pipe(sourceMaps.init())
 	.pipe(minifyCss())
-	.pipe(concat('style.css'))
+	.pipe(concat('all.css'))
 	.pipe(sourceMaps.write())
-	.pipe(gulp.dest('./trunk/css/'));
+	.pipe(gulp.dest('./trunk/wp-content/themes/bootstrap-child/css/'));
+});
+gulp.task('parent',function(){
+	gulp.src(['./trunk/wp-content/themes/wp-bootstrap-starter/style.css'])
+	.pipe(sourceMaps.init())
+	.pipe(minifyCss())
+	.pipe(concat('parent.css'))
+	.pipe(sourceMaps.write())
+	.pipe(gulp.dest('./trunk/wp-content/themes/wp-bootstrap-starter/'));
 });
 gulp.task('js', function(){
 	gulp.src(['./src/js/*.js'])
 	.pipe(uglify())
 	.pipe(concat('script.js'))
-	.pipe(gulp.dest('./trunk/js/'));
+	.pipe(gulp.dest('./trunk/wp-content/themes/bootstrap-child/css/'));
 });
-
 gulp.task('watch', function(){
 	gulp.start('default');
 	gulp.watch('./src/css/*.css', ['css']);
