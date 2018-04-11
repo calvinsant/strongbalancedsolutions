@@ -8,7 +8,6 @@ var gulp = require('gulp'),
 gulp.task('default', function(){
 	gulp.start('js','css');
 });
-
 gulp.task('css',function(){
 	//Get css files, minify, concatonate and output
 	//Comma separate in src for multiple
