@@ -2,7 +2,7 @@
   "name": "strongbalancedsolutions",
   "version": "1.0.0",
   "description": "Dependencies for Strong Balanced Solutions studio",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
