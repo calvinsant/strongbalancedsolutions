@@ -1,4 +1,5 @@
 node_modules/*
+trunk/coming_soon
 *.log
 wp-config.php
 wp-content/advanced-cache.php
