@@ -1,0 +1,16 @@
+  Design - 
+    Total = 6 hours
+6/22 - 
+  Wordpress/theme system update - 
+  Gulp Setup - 
+  Child Theme Setup - 
+  Advanced Custom Fields -
+    Install - 
+    Home page configuration(global elements as well) - 
+    Global element setup(testimonials) - 
+  Home Page Template Setup - 
+    Admin page creation - 
+    HTML/Bootstrap layout(hero slider, testimonials slider) - 
+    Data Population - 
+
+
