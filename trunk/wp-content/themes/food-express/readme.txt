@@ -12,6 +12,9 @@ CC0 Public Domain
 
 == Changelog ==
 
+= 1.3.3 =
+* Fixed issue with Blog & News not reflecting customizer option.
+
 = 1.3.2 =
 * Bugfix
 

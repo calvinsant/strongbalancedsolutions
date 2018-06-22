@@ -58,6 +58,10 @@ WP Bootstrap Starter includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+= 3.0.16 - June 7, 2018 =
+* Update bootstrap files to v4.1.1
+* Change the wrapper of the footer and footer widget to ".container" instead of ".container-fluid"
+
 = 3.0.15 - May 7, 2018 =
 * Remove the font awesome files
 * Enqueue the fontawesome CDN

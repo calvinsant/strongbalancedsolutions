@@ -1,9 +1,9 @@
   Design - 
     Total = 6 hours
 6/22 - 
-  Wordpress/theme system update - 
-  Gulp Setup - 
-  Child Theme Setup - 
+  Wordpress/theme system update - Complete
+  Gulp Setup - Complete
+  Child Theme Setup - Complete
   Advanced Custom Fields -
     Install - 
     Home page configuration(global elements as well) - 
@@ -11,6 +11,8 @@
   Home Page Template Setup - 
     Admin page creation - 
     HTML/Bootstrap layout(hero slider, testimonials slider) - 
-    Data Population - 
+    Data Population -
+  Global - 
+    https://github.com/jlmakes/scrollreveal
 
 

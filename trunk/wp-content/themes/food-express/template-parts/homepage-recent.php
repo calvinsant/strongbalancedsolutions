@@ -1,5 +1,5 @@
 <?php
-  $recent_title = get_theme_mod('food_express_recent_section_title', __('Blog & News', 'food-express'));
+  $recent_title = get_theme_mod('food_express_recent_title', __('Blog & News', 'food-express'));
   $recent_sub_title = get_theme_mod('food_express_recent_section_subtitle', __('To present an original cuisine where texture, purity of flavour and balance is paramount.', 'food-express'));
   $recent_show_cat = get_theme_mod( 'food_express_recent_cat', 1);
   $container_class_recent = get_theme_mod( 'food_express_homepage_container_class', true ) ? 'container' : 'fluid';
