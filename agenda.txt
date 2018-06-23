@@ -4,14 +4,29 @@
   Wordpress/theme system update - Complete
   Gulp Setup - Complete
   Child Theme Setup - Complete
+
   Advanced Custom Fields -
-    Install - 
+    Install - Complete
     Home page configuration(global elements as well) - 
     Global element setup(testimonials) - 
+
+Shell integration - 
+  Header - 
+    Logo
+    menu
+    background mandala
+    social
+  Content
+    Fonts Install
+    Mandala background
+    Buttons
+  Footer
+
   Home Page Template Setup - 
     Admin page creation - 
     HTML/Bootstrap layout(hero slider, testimonials slider) - 
     Data Population -
+
   Global - 
     https://github.com/jlmakes/scrollreveal
 
