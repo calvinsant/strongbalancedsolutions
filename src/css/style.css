@@ -7,3 +7,7 @@
   Template: wp-bootstrap-starter
 */
 @import url("../../trunk/wp-content/themes/wp-bootstrap-starter/style.css");
+
+body{
+  background-color: red;
+}
