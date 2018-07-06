@@ -12,10 +12,10 @@
 
 Shell integration - 
   Header - 
-    Logo
-    menu
-    background mandala
-    social
+    Logo - complete
+    menu - complete
+    background mandala - complete
+    social - 
   Content
     Fonts Install
     Mandala background
