@@ -67,7 +67,7 @@
 <?php		
 	} ?>
 	</div>
-	<div class="newsletter	">
+	<div class="newsletter">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-center text-md-left pt-4"><h3>STAY UP TO DATE ON SPECIALS AND UPCOMING EVENTS</h3></div>
@@ -102,27 +102,24 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+	<?php if(have_rows('offerings')) { ?>
+		<div id="content" class="site-content">
+			<div class="container offerings text-center">
+				<div class="row d-flex justify-content-between">
+					<h1 class="w-100 entry-title mb-5"><span><?php the_field('offerings_title'); ?></span></h1>
+			<?php while(have_rows('offerings')){ the_row(); ?>
+				<div class="col-12 col-sm-6 col-md-3 text-center mt-4">
+					<img src="<?php the_sub_field('offering_image'); ?>" alt="offering-<?php echo get_row_index(); ?>" class="rounded-circle">
+					<h3 class="pt-4"><?php the_sub_field('offering_title'); ?></h3>
+					<p class="pb-4"><?php the_sub_field('offering_paragraph'); ?></p>
+					<a class="orange-button p-3 d-block mb-5" href="<?php the_sub_field('offering_link'); ?>">LEARN MORE</a>
+				</div>
+		<?php } ?>
+				</div>
+			</div>
+	</div>
+<?php } ?>
+
 	<?php if ( get_edit_post_link() && !$enable_vc ) : ?>
 		<footer class="entry-footer">
 			<?php

@@ -37,7 +37,11 @@
                     <?php endif; ?>
 
                 </div>
-                <div id="social-menu"><?php wp_nav_menu( array( 'theme_location' => 'social_menu' ) ); ?></div>
+                <!-- Social menu if not mobile -->
+                <?php if(!wp_is_mobile()){ ?> 
+                  <div id="social-menu"><?php wp_nav_menu( array( 'theme_location' => 'social_menu' ) ); ?></div>
+                <?php } ?>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,7 +59,9 @@
                 'walker'          => new wp_bootstrap_navwalker()
                 ));
                 ?>
-
+                <?php if(wp_is_mobile()){ ?> 
+                  <div id="social-menu"><?php wp_nav_menu( array( 'theme_location' => 'social_menu' ) ); ?></div>
+                <?php } ?>
             </nav>
         </div>
 	</header><!-- #masthead -->
@@ -84,7 +90,7 @@
       <div style="background-image:url('<?php the_sub_field('slider_image'); ?>');" class="carousel-item <?php if($i==0){echo 'active';} ?>">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 text-center text-md-left">
+            <div class="col-md-7 text-center text-md-left hero-content p-4">
               <h1><?php the_sub_field('slider_header'); ?></h1>
               <h2><?php the_sub_field('slider_sub_header'); ?></h2>
               <p><?php the_sub_field('slider_paragraph'); ?></p>
@@ -101,8 +107,28 @@
       } ?>
       </div>
   <?php 
-    }
+    }elseif(get_field('hero_image')){
   ?>
+
+    <div id="page-sub-header" class="hero" style="background-image:url('<?php the_field('hero_image'); ?>');">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 text-center text-md-left hero-content p-4">
+              <h1><?php the_field('hero_header'); ?></h1>
+              <h2><?php the_field('hero_sub_header'); ?></h2>
+              <p><?php the_field('hero_paragraph'); ?></p>
+              <?php if(get_sub_field('hero_button_text')){ ?>
+                  <br>
+                  <a class="orange-button p-3" href="<?php the_field('hero_button'); ?>"><?php the_field('hero_button_text'); ?></a>
+              <?php } ?>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+  <?php
+    }
+    ?>
 
       </div>
       <a data-slide="prev" role="button" href="#carousel-example-captions" class="left carousel-control">
