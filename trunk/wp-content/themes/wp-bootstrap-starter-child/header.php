@@ -38,9 +38,12 @@
 
                 </div>
                 <!-- Social menu if not mobile -->
-                <?php if(!wp_is_mobile()){ ?> 
-                  <div id="social-menu"><?php wp_nav_menu( array( 'theme_location' => 'social_menu' ) ); ?></div>
-                <?php } ?>
+                <?php if(wp_is_mobile()){ ?> 
+                  
+                <?php } else{ ?>
+                  <div class="social-menu"><?php wp_nav_menu( array( 'theme_location' => 'social_menu' ) ); ?></div>
+              <?php
+                } ?>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,11 +62,16 @@
                 'walker'          => new wp_bootstrap_navwalker()
                 ));
                 ?>
-                <?php if(wp_is_mobile()){ ?> 
-                  <div id="social-menu"><?php wp_nav_menu( array( 'theme_location' => 'social_menu' ) ); ?></div>
-                <?php } ?>
-            </nav>
-        </div>
+                
+                <?php 
+                  if(wp_is_mobile()){ ?>
+                    <div class="social-menu-mobile navbar-collapse justify-content-end collapse show"><?php wp_nav_menu(array('theme_location' => 'social_menu')); ?></div>
+                    <?php
+                  }
+                ?>
+
+            </nav>     
+            </div>
 	</header><!-- #masthead -->
   <?php 
     if(have_rows('slider')){

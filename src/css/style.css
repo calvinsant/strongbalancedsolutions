@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, #page-sub-header h1,body:not(.theme-preset-active) #page
 h2{
   font-size: 2em;
 }
-#content h2{
+#content h2, #content h3{
   border-bottom:solid 1px;
   font-size: 30px;
 }
@@ -93,38 +93,59 @@ body:not(.theme-preset-active) #masthead .navbar-nav>li>a{
   background-color:#0a615b;
   color:white;
 }
-div#social-menu{
+#menu-social-menu, #menu-social-menu-1{
+  list-style: none;
+}
+#menu-social-menu{
+
+}
+#menu-social-menu li, #menu-social-menu-1 li{
+  float:left;
+}
+div.social-menu{
   position: absolute;
   right: 8px;
-  top: 5px;
+  top: -13px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
 }
-div#social-menu .youtube{
+.social-menu-mobile #menu-social-menu{
+  float: left;
+    margin-left: 0;
+    padding-left: 8px;
+}
+.navbar-collapse.justify-content-end.collapse ~ div.social-menu-mobile{
+  display:none;
+}
+.navbar-collapse.justify-content-end.collapse.show ~ div.social-menu-mobile{
+  display:block;
+}
+
+div.social-menu .youtube, div.social-menu-mobile .youtube{
   padding-left:5px;
 }
-div#social-menu .instigram{
+div.social-menu .instigram, div.social-menu-mobile .instigram{
   padding-left:5px;
 }
-#menu-social-menu{
+.menu-social-menu{
   list-style: none;
   margin:0px;
 }
-#social-menu .fab:before{
+.social-menu .fab:before, .social-menu-mobile .fab:before{
   color:#10b5af;
   font-size: 22px;
     transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
 }
-header#masthead.shrink #social-menu .fab:before{
+header#masthead.shrink .social-menu .fab:before{
   font-size: 17px;
 }
-header#masthead.shrink div#social-menu{
+header#masthead.shrink div.social-menu{
   top: -4px;
 }
-#menu-social-menu li{
+.menu-social-menu li{
   float:left;
 }
 #menu-top-navigation a{
@@ -142,7 +163,7 @@ header#masthead.shrink .navbar-brand{
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(16,181,175, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .navbar-light .navbar-toggler {
@@ -232,6 +253,8 @@ h1.entry-title span{
 }
 #content.site-content h3{
   font-size: 20px;
+}
+#content .offerings h3{
   font-weight: 600;
 }
 /* HOME BANNER START */
@@ -301,6 +324,31 @@ video {
   color:#0a615b;
 }
 /* END ABOUT PAGE */
+/* CONTACT PAGE */
+.page-template-page-contact #contact-info{
+  text-align: left;
+}
+.page-template-page-contact #contact-info .fas{
+  font-size: 30px;
+}
+.page-template-page-contact #contact-info span{
+  font-size: 20px;
+  font-weight: 600;
+}
+.page-template-page-contact #contact-info a{
+  color:#0a615b;
+}
+.page-template-page-contact input.wpcf7-submit{
+  border:none;
+  border-radius: 0;
+}
+.page-template-page-contact .btn-primary:not(:disabled):not(.disabled):active{
+  background-color:#db8423;
+}
+.page-template-page-contact .btn-primary:focus{
+  box-shadow: 0;
+}
+/* END CONTACT PAGE */
 .newsletter{
  background:url(images/newsletter-mandala.png) repeat #10b5af;
  background-position: center;

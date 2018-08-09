@@ -1,7 +1,8 @@
 <?php 
   /* 
     Template Name: Home Page
-  */
+	*/
+	
   get_header(); ?>
 
 	<section id="primary" class="content-area col">
