@@ -26,6 +26,9 @@ h2{
   border-bottom:solid 1px;
   font-size: 30px;
 }
+a:hover{
+  text-decoration:unset;
+}
 p, a, input{
   font-family: 'Monda', sans-serif;
   font-size: 14px;
@@ -143,7 +146,7 @@ header#masthead.shrink .social-menu .fab:before{
   font-size: 17px;
 }
 header#masthead.shrink div.social-menu{
-  top: -4px;
+  top: -20px;
 }
 .menu-social-menu li{
   float:left;

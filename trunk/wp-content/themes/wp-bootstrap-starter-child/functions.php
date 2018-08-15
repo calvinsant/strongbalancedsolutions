@@ -115,3 +115,67 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+// Custom post type "Services"
+function custom_post_services()
+{
+    $labels = array(
+        'name' => _x('Services', 'post type general name'),
+        'singular_name' => _x('Service', 'post type singular name'),
+        'add_new' => _x('Add New', 'service'),
+        'add_new_item' => __('Add New Service'),
+        'edit_item' => __('Edit Service'),
+        'new_item' => __('New Service'),
+        'all_items' => __('All Services'),
+        'view_item' => __('View Service'),
+        'search_items' => __('Search Services'),
+        'not_found' => __('No services found'),
+        'not_found_in_trash' => __('No services found in the Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Services'
+    );
+              // $args = array();
+    $args = array(
+        'labels' => $labels,
+        'description' => 'Holds our services and services specific data',
+        'public' => true,
+        'menu_position' => 5,
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'rewrite' => array('slug' => 'services', 'with_front' => false),
+        'has_archive' => false,
+    );
+    register_post_type('service', $args);
+}
+add_action('init', 'custom_post_services');
+
+// Custom post type "Testimonials"
+function custom_post_testimonials()
+{
+    $labels = array(
+        'name' => _x('Testimonials', 'post type general name'),
+        'singular_name' => _x('testimonial', 'post type singular name'),
+        'add_new' => _x('Add New', 'testimonial'),
+        'add_new_item' => __('Add New testimonial'),
+        'edit_item' => __('Edit testimonial'),
+        'new_item' => __('New testimonial'),
+        'all_items' => __('All Testimonials'),
+        'view_item' => __('View testimonial'),
+        'search_items' => __('Search testimonials'),
+        'not_found' => __('No testimonials found'),
+        'not_found_in_trash' => __('No testimonials found in the Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Testimonials'
+    );
+              // $args = array();
+    $args = array(
+        'labels' => $labels,
+        'description' => 'Holds our testimonials and testimonials specific data',
+        'public' => true,
+        'menu_position' => 5,
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'rewrite' => array('slug' => 'testimonials', 'with_front' => false),
+        'has_archive' => false,
+    );
+    register_post_type('testimonial', $args);
+}
+add_action('init', 'custom_post_testimonials');
