@@ -179,3 +179,67 @@ function custom_post_testimonials()
     register_post_type('testimonial', $args);
 }
 add_action('init', 'custom_post_testimonials');
+
+//Custom post type "gifts"
+function custom_post_gifts()
+{
+    $labels = array(
+        'name' => _x('Gifts', 'post type general name'),
+        'singular_name' => _x('Gift', 'post type singular name'),
+        'add_new' => _x('Add New', 'Gift'),
+        'add_new_item' => __('Add New Gift'),
+        'edit_item' => __('Edit Gift'),
+        'new_item' => __('New Gift'),
+        'all_items' => __('All Gift'),
+        'view_item' => __('View Gift'),
+        'search_items' => __('Search gifts'),
+        'not_found' => __('No gifts found'),
+        'not_found_in_trash' => __('No gifts found in the Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Gifts'
+    );
+              // $args = array();
+    $args = array(
+        'labels' => $labels,
+        'description' => 'Holds our gifts specific data',
+        'public' => true,
+        'menu_position' => 5,
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'rewrite' => array('slug' => 'free-gift', 'with_front' => false),
+        'has_archive' => false,
+    );
+    register_post_type('gift', $args);
+}
+add_action('init', 'custom_post_gifts');
+
+//Custom post type "Offerings"
+function custom_post_offerings()
+{
+    $labels = array(
+        'name' => _x('Offerings', 'post type general name'),
+        'singular_name' => _x('Offering', 'post type singular name'),
+        'add_new' => _x('Add New', 'Offering'),
+        'add_new_item' => __('Add New Gift'),
+        'edit_item' => __('Edit Offering'),
+        'new_item' => __('New Offering'),
+        'all_items' => __('All Offering'),
+        'view_item' => __('View Offering'),
+        'search_items' => __('Search offerings'),
+        'not_found' => __('No offerings found'),
+        'not_found_in_trash' => __('No offerings found in the Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Offerings'
+    );
+              // $args = array();
+    $args = array(
+        'labels' => $labels,
+        'description' => 'Holds our offerings specific data',
+        'public' => true,
+        'menu_position' => 5,
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'rewrite' => array('slug' => 'offerings', 'with_front' => false),
+        'has_archive' => false,
+    );
+    register_post_type('offering', $args);
+}
+add_action('init', 'custom_post_offerings');

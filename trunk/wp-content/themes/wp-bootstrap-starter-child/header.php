@@ -77,7 +77,7 @@
     if(have_rows('slider')){
       $i = 0;
   ?>
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade hero" data-ride="carousel" data-interval="5000">
     <ol class="carousel-indicators">
       <?php while(have_rows('slider')){ 
         the_row();

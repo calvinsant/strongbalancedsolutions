@@ -177,7 +177,7 @@ header#masthead.shrink .navbar-brand{
 .hero-content{
   background-color: rgb(0,0,0,0.2);
 }
-.carousel-item, #page-sub-header.hero{
+.hero .carousel-item, #page-sub-header.hero{
   padding: 8% 0% 7% 0%;
   min-height: 690px;
   background-repeat: no-repeat;
@@ -352,6 +352,38 @@ video {
   box-shadow: 0;
 }
 /* END CONTACT PAGE */
+
+/* SERVICES PAGE */
+#content h2.service-title{
+  height:50px;
+  font-size: 24px;
+}
+a.product-item.service{
+  color:#0a615b;
+  transition: background-color 0.8s ease;
+  background-color: transparent;
+}
+a.product-item.service:hover, a.product-item.service:active{
+  background-color:#0a615b;
+  color:white;
+}
+#content a.product-item.service:hover section h2{
+  color:white;
+}
+/* END SERVICES PGE */
+/* FREE GIFTS PAGE */
+  .video-containers {
+    width: 50%;
+    float: left;
+}
+#mc_embed_signup{
+  width:auto !important;
+  margin:0 auto;
+}
+#mc-embedded-subscribe.button{
+  background-color: #db8423 !important;
+}
+/* END FREE GIFTS */
 .newsletter{
  background:url(images/newsletter-mandala.png) repeat #10b5af;
  background-position: center;
@@ -403,6 +435,43 @@ video {
 #mce-error-response a{
   color: #db8423;
 }
+.testimonials{
+  background-color:#10b5af;
+}
+.testimonials blockquote{
+  font-size: 20px;
+}
+.testimonials img{
+  max-width:80px;
+}
+.testimonials, #content .testimonials h2.entry-title{
+  color:white;
+}
+.testimonials blockquote::before{
+  font-weight: 900;
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f10d";
+  font-size: 18px;
+}
+.testimonials blockquote::after{
+  font-weight: 900;
+  font-family: "Font Awesome\ 5 Free";
+  content: '\f10e'; /*quote left icon*/
+  font-size: 18px;
+}
+.testimonials .carousel-caption{
+  padding:0px;
+  bottom:50px;
+}
+/* TESTIMONIALS SLIDER */
+#testimonials .carousel-item{
+  min-height:300px;
+}
+.testimonials .card{
+  background-color:transparent;
+  border:0px;
+}
+
 #footer-widget #mc-embedded-subscribe{
   margin:0px !important;
 }
@@ -488,6 +557,18 @@ video {
   }
   #mc-embedded-subscribe{
     margin: 1em 0 1em 0 !important;
+  }
+  ul#menu-top-navigation li{
+    text-align: center;
+  }
+  #menu-social-menu{
+    padding: 8px 0px 0px 8px;
+  }
+  body:not(.theme-preset-active) #masthead .navbar-nav>li>a{
+    font-size: 1rem;
+  }
+  .navbar-nav{
+    margin-top:12px;
   }
 }
 @media(max-width:425px){
