@@ -80,7 +80,7 @@
 		if($banner){ ?>
 			<div style="background-image:url('<?php echo $banner['background_image'] ?>');" class="row profile-banner p-5 text-left site-content">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 p-4 hero-content">
 						<h1><?php echo $banner['banner_header'] ?></h1>
 						<h2><?php echo $banner['banner_sub_header'] ?></h2>
 						<p><?php echo $banner['banner_paragraph'] ?></p>

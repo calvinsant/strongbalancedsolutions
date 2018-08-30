@@ -47,6 +47,8 @@ p, a, input{
   transition: all 0.3s ease-in-out;
 -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
+border:none !important;
+border-radius:0 !important;
 }
 .orange-button:hover{
   color:white;
@@ -257,9 +259,6 @@ h1.entry-title span{
 #content.site-content h3{
   font-size: 20px;
 }
-#content .offerings h3{
-  font-weight: 600;
-}
 /* HOME BANNER START */
 .home-banner{
   min-height: 420px;
@@ -384,6 +383,54 @@ a.product-item.service:hover, a.product-item.service:active{
   background-color: #db8423 !important;
 }
 /* END FREE GIFTS */
+/* BEGIN OFFERINGS PAGE */
+  #offerings-content h2{
+    font-size:35px;
+    text-align: left;
+  }
+  #offerings-content p{
+    text-align: left;
+  }
+   #offerings-content .offering{
+     text-align:left;
+     background-color:#fdfdfd;
+   }
+      #offerings-content .offering:nth-child(odd){
+     background-color:#0a615b;
+     color:white;
+   }
+   #offerings-content .offering:nth-child(odd) h2{
+     color:white;
+   }
+   #offerings-content .offering .offering-info{
+     font-size:22px;
+   }
+  /* OFFERING POPUP */
+  #fadeandscale {
+  transform: scale(0.8);
+}
+.popup_visible #fadeandscale {
+  transform: scale(1);
+}
+.offering-popup{
+  background-color:#10b5af;
+}
+.offering-popup input.offering-title{
+  background-color:transparent;
+  border:0;
+  color:white;
+  font-family: 'Julius Sans One',sans-serif;
+  font-size: 22px;
+  text-align: center;
+  border-bottom:solid 1px;
+}
+.offering-popup .wpcf7-response-output{
+  color:white;
+}
+.offering-popup div.wpcf7-mail-sent-ok{
+  border-color:white;
+}
+/* END OFFERINGS PAGE */
 .newsletter{
  background:url(images/newsletter-mandala.png) repeat #10b5af;
  background-position: center;

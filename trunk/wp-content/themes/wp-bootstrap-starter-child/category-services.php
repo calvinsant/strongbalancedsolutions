@@ -67,34 +67,6 @@ get_header(); ?>
 </article><!-- #post-## -->		
 			</main><!-- #content -->
     </section><!-- #primary -->
-<!-- <article>
-       <?php 
-      if ($testimonials->have_posts()) { ?>
-          <div class="row p-5 d-flex justify-content-between testimonials mt-5">
-            <div class="col-md-4">
-              <h2 class="entry-title"><span>TESTIMONIALS</span></h2>
-            </div>
-            <div class="col-md-7">
-                <blockquote>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
-                </blockquote>
-                <div class="row">
-                  <div class="col-5 text-right">
-                    <img class="rounded-circle" src="/bio.jpg" alt="">
-                  </div>
-                  <div class="col-7 text-left">
-                     <cite>
-                      ~ CALVIN SANT
-                    </cite>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <?php
-        }
-        ?>	
-    </article> -->
 <?php 
   if($testimonials->have_posts()){ 
     $i = 0;

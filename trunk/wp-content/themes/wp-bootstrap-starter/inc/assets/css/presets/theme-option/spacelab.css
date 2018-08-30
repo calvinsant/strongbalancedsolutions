@@ -3209,11 +3209,9 @@ tbody.collapse.show {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
@@ -3334,7 +3332,7 @@ tbody.collapse.show {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #202020;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa !important;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -9254,4 +9252,7 @@ a.text-dark:hover, a.text-dark:focus {
 .list-group-item h5,
 .list-group-item h6 {
   color: inherit;
+}
+.navbar-brand > a {
+  color: #333;
 }

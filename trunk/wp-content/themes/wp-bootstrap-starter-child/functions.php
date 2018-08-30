@@ -12,6 +12,11 @@ function add_google_fonts(){
 add_action('wp_enqueue_scripts', 'add_google_fonts');
 
 function add_custom_js(){ ?>
+
+            <?php 
+            wp_enqueue_script('offerings_popup', 'https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js', false);
+            ?>
+            
               <!-- Floating scroll to top -->
               <script type="text/javascript">
                 jQuery(document).ready(function(){
@@ -68,9 +73,29 @@ function add_custom_js(){ ?>
                 }
             });
         </script>
+        <script>
+        jQuery(document).ready(function() {
+
+            //http://dev.vast.com/jquery-popup-overlay/
+
+            var elements = [];
+            jQuery("section[id^='my_popup_']").each(function(){
+                elements.push(this.id);
+            });
+
+            elements.forEach(element => {
+                jQuery('#' + element).popup({transition: 'all 0.3s'});
+            });
+    });
+  </script>
 <?php }
 //Add custom js to footer
 add_action('wp_footer', 'add_custom_js');
+
+// function external_scripts()
+// {
+//     wp_enqueue_script('offerings_popup', 'https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js', false);
+// }
 
 // Custom Menu Locations
 function register_custom_menus() {
@@ -243,3 +268,11 @@ function custom_post_offerings()
     register_post_type('offering', $args);
 }
 add_action('init', 'custom_post_offerings');
+
+//Short code for offerings contact forms
+
+function offering_dynamic_value(){
+    
+}
+
+add_shortcode('offering', 'offering_dynamic_value');

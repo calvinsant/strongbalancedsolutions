@@ -39,6 +39,12 @@ jQuery( function ( $ ) {
         $(this).parent().toggleClass('open');
     });
 
+    // Fix woocommerce checkout layout
+    $('#customer_details .col-1').addClass('col-12').removeClass('col-1');
+    $('#customer_details .col-2').addClass('col-12').removeClass('col-2');
+    $('.woocommerce-MyAccount-content .col-1').addClass('col-12').removeClass('col-1');
+    $('.woocommerce-MyAccount-content .col-2').addClass('col-12').removeClass('col-2');
+
     // Add Option to add Fullwidth Section
     function fullWidthSection(){
         var screenWidth = $(window).width();
