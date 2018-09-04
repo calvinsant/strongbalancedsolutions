@@ -78,6 +78,7 @@ border-radius:0 !important;
     right: 2%;
     display: none;
     font-size: 20px;
+    z-index: 999;
 }
 .fa-chevron-up:before {
     position: fixed;

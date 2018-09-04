@@ -48,7 +48,7 @@ if (!$enable_vc) {
 			<section id="my_popup_<?php echo $i; ?>" class="offering-popup p-4">
 				<?php echo do_shortcode('[contact-form-7 id=" 305 " title=" Offerings lead generation form "]'); ?>
 			</section>
-			<div class="row offering p-5">
+			<div class="row offering p-5 fadein">
 				<div class="col-md-8 align-self-center"><h2><?php the_title();?></h2><p><?php the_content(); ?></p></div>
 				<div class="col-md-2 align-self-center offering-info">
 				<i>30 MIN/ $40</i>
