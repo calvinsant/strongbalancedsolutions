@@ -50,7 +50,7 @@ get_header(); ?>
 <div class="container">
   <div class="row">
     <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
-          <a class="col-md-6 col-lg-6 col-xl-6 p-5 text-center product-item service" href="<?php echo get_permalink($post->ID); ?>">
+          <a class="col-md-6 col-lg-6 col-xl-6 p-5 text-center product-item service fadein" href="<?php echo get_permalink($post->ID); ?>">
             	<section>
                 <h2 class="align-middle service-title"><?php the_title() ?></h2>
                 <p class="service-exerpt">

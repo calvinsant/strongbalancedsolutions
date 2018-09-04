@@ -15,11 +15,11 @@
     if(!$enable_vc ) {
     ?>
     <header class="entry-header">
-		<?php the_title( '<h1 class="entry-title"><span>', '</span></h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title fadein_load"><span>', '</span></h1>' ); ?>
 	</header><!-- .entry-header -->
     <?php } ?>
 
-	<div class="entry-content">
+	<div class="entry-content fadein_load">
 		<?php
 			the_content();
 
@@ -60,7 +60,7 @@
 			<source src="<?php echo $video['background_video']; ?>" type="video/mp4" />
 
 		</video>
-	<div class="video-content">
+	<div class="video-content fadein">
 		<h1><?php echo $video['video_header']; ?></h1>
 		<h2><?php echo $video['video_sub_header']; ?></h2>
 		<?php 
@@ -80,7 +80,7 @@
 		if($banner){ ?>
 			<div style="background-image:url('<?php echo $banner['background_image'] ?>');" class="row profile-banner p-5 text-left site-content">
 				<div class="row">
-					<div class="col-md-4 p-4 hero-content">
+					<div class="col-md-4 p-4 hero-content fadein">
 						<h1><?php echo $banner['banner_header'] ?></h1>
 						<h2><?php echo $banner['banner_sub_header'] ?></h2>
 						<p><?php echo $banner['banner_paragraph'] ?></p>
@@ -139,10 +139,10 @@
 		
 		if($gallery){ ?>
 			<div id="content" class="row text-center site-content pt-0 pb-0">
-				<h1 class="w-100 entry-title mb-5 p-5"><span><?php the_field('gallery_title'); ?></span></h1>
+				<h1 class="w-100 entry-title mb-5 p-5 fadein"><span><?php the_field('gallery_title'); ?></span></h1>
 				<?php 
 					foreach ($gallery as $image) { ?>
-						<div class="col-12 col-md-4 nopadding">
+						<div class="col-12 col-md-4 nopadding fadein">
 							<img src="<?php echo $image['url']; ?>" alt="">
 						</div>
 			<?php
@@ -152,24 +152,6 @@
 <?php
 		}
 	?>
-
-	<?php if(have_rows('offerings')) { ?>
-		<div id="content" class="site-content">
-			<div class="container offerings text-center">
-				<div class="row d-flex justify-content-between">
-					<h1 class="w-100 entry-title mb-5"><span><?php the_field('offerings_title'); ?></span></h1>
-			<?php while(have_rows('offerings')){ the_row(); ?>
-				<div class="col-12 col-sm-6 col-md-3 text-center mt-4">
-					<img src="<?php the_sub_field('offering_image'); ?>" alt="offering-<?php echo get_row_index(); ?>" class="rounded-circle">
-					<h3 class="pt-4"><?php the_sub_field('offering_title'); ?></h3>
-					<p class="pb-4"><?php the_sub_field('offering_paragraph'); ?></p>
-					<a class="orange-button p-3 d-block mb-5" href="<?php the_sub_field('offering_link'); ?>">LEARN MORE</a>
-				</div>
-		<?php } ?>
-				</div>
-			</div>
-	</div>
-<?php } ?>
 
 	<?php if ( get_edit_post_link() && !$enable_vc ) : ?>
 		<footer class="entry-footer">

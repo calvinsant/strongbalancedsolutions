@@ -6,6 +6,7 @@
   Version: 0.1.0
   Template: wp-bootstrap-starter
 */
+
 @import url("../../trunk/wp-content/themes/wp-bootstrap-starter/style.css");
 body{
   line-height: 1.7;
@@ -54,6 +55,41 @@ border-radius:0 !important;
   color:white;
   text-decoration: none;
   background-color:#bd7320;
+}
+.fadein, .fadein_load{
+  opacity:0;
+}
+#back-to-top {
+    background-color: #10b5af;
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    line-height: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    display: none;
+    font-size: 20px;
+}
+.fa-chevron-up:before {
+    position: fixed;
+    bottom: 13%;
+    right: 2%;
+    color: #fff;
+    font-size: 1.7em;
+    width: 50px;
+    height: 50px;
+}
+.fa-chevron-up:before {
+    content: "\f077";
 }
 header#masthead{
   background-color: #fff;
@@ -315,15 +351,13 @@ video {
   background-position: top;
 }
 .profile-banner h1{
-  color:#0a615b;
   font-size: 3em;
 }
 .profile-banner h2{
-  color:#0a615b;
   border-bottom: none;
 }
 .profile-banner p{
-  color:#0a615b;
+  color:white;
 }
 /* END ABOUT PAGE */
 /* CONTACT PAGE */

@@ -55,7 +55,7 @@ get_header(); ?>
 <div class="container">
   <div class="row">
 						<div class="col col-md-6 p-3">
-							<span class="image fit">
+							<span class="image fit fadein">
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/6ltP3de-pyc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 							</span>
 							<h2 class="p-3"><strong>10-minute workout with modifications</strong></h2>
@@ -64,7 +64,7 @@ get_header(); ?>
 							</ul>
 						</div>
 						<div class="col col-md-6 p-3">
-							<span class="image fit">
+							<span class="image fit fadein">
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/ihbqailpbx0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 							</span>
 							<h2 class="p-3"><strong>10-minute strength/cardio workout</strong></h2>
@@ -73,7 +73,7 @@ get_header(); ?>
 							</ul>
 						</div>
 						<div class="col col-md-6 p-3">
-							<span class="image fit">
+							<span class="image fit fadein">
 								<iframe width="100%" height="315" src="https://www.youtube.com/embed/wOMB3lYe76o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 							</span>
 							<h2 class="p-3"><strong>Intoduction to core stabilization</strong></h2>
@@ -82,7 +82,7 @@ get_header(); ?>
 							</ul>
 						</div>
 						<div class="col col-md-6 p-3">
-							<span class="image fit">
+							<span class="image fit fadein">
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/rqsM_0aDVRg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 							</span>
 							<h2 class="p-3">Hip/ core Stability isolation exercises</h2>

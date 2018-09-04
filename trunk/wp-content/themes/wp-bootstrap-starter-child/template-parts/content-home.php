@@ -15,11 +15,11 @@
     if(!$enable_vc ) {
     ?>
     <header class="entry-header">
-		<?php the_title( '<h1 class="entry-title"><span>', '</span></h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title fadein_load"><span>', '</span></h1>' ); ?>
 	</header><!-- .entry-header -->
     <?php } ?>
 
-	<div class="entry-content">
+	<div class="entry-content fadein_load">
 		<?php
 			the_content();
 
@@ -34,10 +34,10 @@
 				the_row();
 			?>
 			<div class="row pt-5 pb-5 mt-5">
-				<div class="col-md-6">
+				<div class="col-md-6 fadein">
 					<img src="<?php the_sub_field('featured_image'); ?>" alt="Strong and Balanced Featured Content">
 				</div>
-				<div class="col-md-6 text-md-left">
+				<div class="col-md-6 text-md-left fadein">
 					<h2 class="pt-4 pt-md-0"><?php the_sub_field('featured_title') ?></h2>
 					<p><?php the_sub_field('featured_paragraph',false, false); ?></p>
 					<br>
@@ -55,7 +55,7 @@
 	<div style="background-image:url(<?php the_sub_field('banner_image'); ?>);" class="row home-banner p-5 text-left mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 fadein">
 				<h2><?php the_sub_field('banner_title') ?></h2>
 				<p><?php the_sub_field('banner_paragraph'); ?></p>
 				<br>
@@ -109,7 +109,7 @@
 					<h1 class="w-100 entry-title mb-5"><span><?php the_field('offerings_title'); ?></span></h1>
 			<?php while(have_rows('offerings')){ the_row(); ?>
 				<div class="col-12 col-sm-6 col-md-3 text-center mt-4">
-					<img src="<?php the_sub_field('offering_image'); ?>" alt="offering-<?php echo get_row_index(); ?>" class="rounded-circle">
+					<img src="<?php the_sub_field('offering_image'); ?>" alt="offering-<?php echo get_row_index(); ?>" class="rounded-circle fadein">
 					<h3 class="pt-4"><?php the_sub_field('offering_title'); ?></h3>
 					<p class="pb-4"><?php the_sub_field('offering_paragraph'); ?></p>
 					<a class="orange-button p-3 d-block mb-5" href="<?php the_sub_field('offering_link'); ?>">LEARN MORE</a>

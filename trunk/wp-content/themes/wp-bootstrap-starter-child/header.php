@@ -98,7 +98,7 @@
       <div style="background-image:url('<?php the_sub_field('slider_image'); ?>');" class="carousel-item <?php if($i==0){echo 'active';} ?>">
         <div class="container">
           <div class="row">
-            <div class="col-md-7 text-center text-md-left hero-content p-4">
+            <div class="col-md-7 text-center text-md-left hero-content fadein_load p-4">
               <h1><?php the_sub_field('slider_header'); ?></h1>
               <h2><?php the_sub_field('slider_sub_header'); ?></h2>
               <p><?php the_sub_field('slider_paragraph'); ?></p>
@@ -121,7 +121,7 @@
     <div id="page-sub-header" class="hero" style="background-image:url('<?php the_field('hero_image'); ?>');">
         <div class="container">
           <div class="row">
-            <div class="col-md-7 text-center text-md-left hero-content p-4">
+            <div class="col-md-7 text-center text-md-left hero-content p-4 fadein_load">
               <h1><?php the_field('hero_header'); ?></h1>
               <h2><?php the_field('hero_sub_header'); ?></h2>
               <p><?php the_field('hero_paragraph'); ?></p>

@@ -24,7 +24,7 @@
 	</footer><!-- #colophon -->
 <?php endif; ?>
 </div><!-- #page -->
-
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top fa fa-chevron-up" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?php wp_footer(); ?>
 </body>
 </html>
