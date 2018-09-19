@@ -6,7 +6,6 @@
   Version: 0.1.0
   Template: wp-bootstrap-starter
 */
-
 @import url("../../trunk/wp-content/themes/wp-bootstrap-starter/style.css");
 body{
   line-height: 1.7;
@@ -42,7 +41,7 @@ p, a, input{
   margin-right:0px !important;
   margin-left: 0px !important;
 }
-.orange-button{
+.orange-button, a[rel="prev"], a[rel="next"]{
   background-color:#db8423;
   color:white;
   transition: all 0.3s ease-in-out;
@@ -51,10 +50,13 @@ p, a, input{
 border:none !important;
 border-radius:0 !important;
 }
-.orange-button:hover{
+.orange-button:hover,  a[rel="prev"]:hover, a[rel="next"]:hover{
   color:white;
   text-decoration: none;
-  background-color:#bd7320;
+  background-color:#bd7320 !important;
+}
+.post-navigation .nav-previous a::before{
+  content: "\f077";
 }
 .fadein, .fadein_load{
   opacity:0;
@@ -405,6 +407,30 @@ a.product-item.service:hover, a.product-item.service:active{
   color:white;
 }
 /* END SERVICES PGE */
+/* SERVICE DETAIL PAGE */
+  .single-service h2{
+    border-bottom: 0 !important;
+  }
+  .single-service span.offering{
+    display:none;
+  }
+  .single-service .wpcf7-form input[type=submit]{
+    float:left;
+    width:100%;
+  }
+  .single-service header{
+    background-color:#0a615b;
+  }
+    .single-service header h1, .single-service header h2{
+    color:white !important;
+  }
+  .single-service #content.site-content h3{
+    font-size: 30px;
+  }
+  .pagination-first .nav-next{
+    float:none !important;
+  }
+/* END SERVICE DETAIL PAGE */
 /* FREE GIFTS PAGE */
   .video-containers {
     width: 50%;

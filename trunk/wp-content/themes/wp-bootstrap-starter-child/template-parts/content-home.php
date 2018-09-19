@@ -55,7 +55,7 @@
 	<div style="background-image:url(<?php the_sub_field('banner_image'); ?>);" class="row home-banner p-5 text-left mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 fadein">
+				<div class="col-md-6 fadein hero-content p-5">
 				<h2><?php the_sub_field('banner_title') ?></h2>
 				<p><?php the_sub_field('banner_paragraph'); ?></p>
 				<br>

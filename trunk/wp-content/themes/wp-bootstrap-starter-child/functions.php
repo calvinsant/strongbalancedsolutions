@@ -276,3 +276,9 @@ function offering_dynamic_value(){
 }
 
 add_shortcode('offering', 'offering_dynamic_value');
+
+function my_theme_posts_link_attributes()
+{
+    return 'class="orange-button"';
+}
+add_filter('next_posts_link_attributes', 'my_theme_posts_link_attributes');

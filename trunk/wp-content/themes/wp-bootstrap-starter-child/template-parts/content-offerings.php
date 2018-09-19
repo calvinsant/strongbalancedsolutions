@@ -16,12 +16,12 @@ $enable_vc = get_post_meta(get_the_ID(), '_wpb_vc_js_status', true);
 if (!$enable_vc) {
   ?>
     <header class="entry-header">
-		<?php the_title('<h1 class="entry-title"><span>', '</span></h1>'); ?>
+		<?php the_title('<h1 class="entry-title fadein_load"><span>', '</span></h1>'); ?>
 	</header><!-- .entry-header -->
     <?php 
   } ?>
 
-	<div class="entry-content">
+	<div class="entry-content fadein_load">
 	<?php 
 	the_content();
 
